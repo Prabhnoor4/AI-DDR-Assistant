@@ -1,6 +1,6 @@
 # AI DDR Assistant
 
-Automated system for generating Detailed Diagnostic Reports (DDR) from building inspection and thermal reports.
+Automated system for generating Detailed Diagnostic Reports (DDR) from building inspection and thermal reports (part of Urbanroof's assignment)
 
 ## Overview
 
