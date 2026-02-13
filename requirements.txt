@@ -1,5 +1,6 @@
 # Core PDF Processing
 pymupdf==1.24.9
+reportlab==4.4.10
 
 # LLM Integration
 google-generativeai==0.7.2
