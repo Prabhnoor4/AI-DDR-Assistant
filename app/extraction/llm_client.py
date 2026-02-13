@@ -1,10 +1,10 @@
 from app.config import Config
 from app.utils.cache_manager import CacheManager
-from app.extraction.providers import GeminiProvider, OllamaProvider, OpenAIProvider
+from app.extraction.providers import GeminiProvider, OllamaProvider
 
 
 class LLMClient:
-#unified llm client with caching, retry logic, and multi-provider support
+    """Unified LLM client with caching, retry logic, and multi-provider support."""
 
     def __init__(self, model_name: str):
         self.model_name = model_name
@@ -17,23 +17,21 @@ class LLMClient:
             self.provider = None
 
     def _create_provider(self):
-        #creating the appropriate LLM provider based on configuration
+        """Create the appropriate LLM provider based on configuration."""
         provider_type = Config.LLM_PROVIDER.lower()
         
         if provider_type == "gemini":
             return GeminiProvider(self.model_name)
-        elif provider_type == "openai":
-            return OpenAIProvider()
         elif provider_type == "ollama":
             return OllamaProvider()
         else:
             raise ValueError(
                 f"Unknown LLM provider: {provider_type}. "
-                f"Supported: 'gemini', 'openai', 'ollama'"
+                f"Supported: 'gemini', 'ollama'"
             )
 
     def generate(self, prompt: str, temperature: float) -> str:
-        #generating text with caching and retry support
+        """Generate text with caching and retry support."""
         # Mock mode
         if Config.USE_MOCK:
             return self._mock_response(prompt)

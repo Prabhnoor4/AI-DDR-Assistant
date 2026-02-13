@@ -21,7 +21,7 @@ class Config:
     USE_MOCK = False
     
     # Caching settings to avoid redundant API calls
-    ENABLE_CACHE = False  # Disabled to show fresh AI generation in demos
+    ENABLE_CACHE = True  # Enabled to speed up Ollama responses
     CACHE_DIR = "data/cache"
     
     # Retry logic for handling rate limits(for gemini)
@@ -33,4 +33,5 @@ class Config:
     
     # Ollama configuration (local LLM server)
     OLLAMA_BASE_URL = "http://localhost:11434"
-    OLLAMA_MODEL = "llama3.2"  # Can also use "mistral", "gemma2", etc.
+    OLLAMA_MODEL = "llama3.2"  # 3.2B model
+    OLLAMA_TIMEOUT = 300  # Timeout in seconds for Ollama requests

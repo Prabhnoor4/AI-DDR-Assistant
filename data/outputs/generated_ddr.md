@@ -1,21 +1,20 @@
 # Detailed Diagnostic Report (DDR)
 
-**Generated:** February 13, 2026 at 01:05 PM
+**Generated:** February 13, 2026 at 06:30 PM
 
 ---
 
 ## 1. Property Issue Summary
 
-The property has multiple areas of dampness and efflorescence, particularly in Impacted Area 1, 2, 3, 4, and 5. The general thermal findings are not available due to missing data.
+The property inspection revealed dampness issues in multiple areas, including Impacted Area, Impacted Area 2, Impacted Area 3, Impacted Area 4, Impacted Area 5, Impacted Area 6, and Impacted Area 7. The root cause is likely related to concealed plumbing leaks or poor drainage. Immediate actions are needed to address the dampness issues.
 
 ---
 
 ## 2. Area-wise Observations
 
 **Impacted Area:**
-- Dampness & efflorescence on
 - Dampness
-- Hall Skirting level Dampness
+- Dampness & efflorescence on Hall Skirting level Dampness
 
 **Impacted Area 2:**
 - Dampness
@@ -33,64 +32,64 @@ The property has multiple areas of dampness and efflorescence, particularly in I
 - Positive side Description
 
 **Impacted Area 5:**
-- Negative side Description
 - Negative side photographs
+- Negative side Description
 - Positive side photographs
 - Positive side Description
 
 **Impacted Area 6:**
 - Hollowness and plumbing issue
+- Negative side photographs
 - Positive side photographs
 
 **Impacted Area 7:**
 - Dampness
 - Outlet Leakage
+- Condition of leakage at interior side
 - Positive side photographs
 - Positive side Description
-- Condition of leakage at interior side
 
 ---
 
 ## 3. Probable Root Cause
 
-The root cause is likely due to poor drainage, inadequate waterproofing, or concealed plumbing issues. Further investigation is needed to determine the exact cause.
+Concealed plumbing leaks or poor drainage are likely causes of the dampness issues.
 
 ---
 
 ## 4. Severity Assessment
 
-**Severity Level:** [Moderate]
+**Severity Level:** High
 
 **Reasoning:**
-- Impacted Area 1 has multiple areas of dampness and efflorescence.
-- Impacted Area 2, 3, 4, and 5 have dampness issues with positive side photographs and descriptions.
-- Impacted Area 6 has hollowness and plumbing issue.
-- Impacted Area 7 has dampness, outlet leakage, and condition of leakage at interior side.
+- Multiple areas affected by dampness
+- Presence of efflorescence on Hall Skirting level Dampness indicates a severe issue
+- Immediate actions needed to address the dampness issues
 
 ---
 
 ## 5. Recommended Actions
 
 **Immediate Actions (1-2 days):**
-1. Inspect and repair any concealed plumbing issues.
+1. Inspect and repair concealed plumbing leaks
 
 **Short-term (1-2 weeks):**
-2. Apply a waterproofing treatment to the affected areas.
+2. Install a drainage system or improve existing one
 
 **Long-term:**
-3. Conduct a thorough investigation into the root cause of the dampness and efflorescence, and implement corrective measures.
+3. Conduct further investigations to identify root causes and implement long-term solutions
 
 ---
 
 ## 6. Additional Notes
 
-Patterns observed include multiple areas of dampness and efflorescence, particularly in Impacted Area 1, 2, 3, 4, and 5. Further investigation is needed to determine the exact cause and prevent future occurrences.
+Further investigation is needed to determine the root cause of the dampness issues. Preventive measures should be taken to prevent future occurrences.
 
 ---
 
 ## 7. Missing or Unclear Information
 
-Thermal readings are not available due to missing data.
+All necessary information was available.
 
 ---
 

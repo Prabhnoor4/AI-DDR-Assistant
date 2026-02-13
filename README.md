@@ -92,13 +92,9 @@ ai_ddr_assistant/
 │   ├── config.py                    # Configuration settings
 │   ├── main.py                      # Main pipeline orchestrator
 │   ├── extraction/
-│   │   ├── llm_client.py           # LLM client with provider abstraction
+│   │   ├── llm_client.py           # Gemini API wrapper
 │   │   ├── inspection_extractor.py # Inspection data extraction
-│   │   ├── thermal_extractor.py    # Thermal data extraction
-│   │   └── providers/              # LLM provider implementations
-│   │       ├── base_provider.py    # Base provider interface
-│   │       ├── gemini_provider.py  # Google Gemini API provider
-│   │       └── ollama_provider.py  # Ollama local LLM provider
+│   │   └── thermal_extractor.py    # Thermal data extraction
 │   ├── processing/
 │   │   ├── pdf_parser.py           # PDF text extraction
 │   │   ├── text_cleaner.py         # Text preprocessing
@@ -109,19 +105,17 @@ ai_ddr_assistant/
 │   │   ├── area_linker.py          # Area cross-referencing
 │   │   ├── conflict_detector.py    # Conflict identification
 │   │   └── missing_detector.py     # Missing data detection
-│   ├── reporting/
-│   │   ├── ddr_builder.py          # DDR generation
-│   │   ├── markdown_renderer.py    # Markdown formatting
-│   │   └── pdf_renderer.py         # PDF report generation
-│   └── utils/
-│       ├── cache_manager.py        # Caching utilities
-│       ├── retry_handler.py        # Retry logic for API calls
-│       └── similarity.py           # Text similarity functions
+│   ├── diagnostics/
+│   │   ├── root_cause_mapper.py    # Root cause analysis
+│   │   ├── severity_engine.py      # Severity assessment
+│   │   └── recommendation_engine.py # Action recommendations
+│   └── reporting/
+│       ├── ddr_builder.py          # DDR generation
+│       └── markdown_renderer.py     # Markdown formatting
 ├── data/
 │   ├── raw/                        # Input PDFs
-│   ├── outputs/                    # Generated reports
-│   └── cache/                      # Cached LLM responses
-├── streamlit_app.py                # Streamlit web interface
+│   └── outputs/                    # Generated reports
+├── tests/                          # Unit tests
 ├── requirements.txt                # Python dependencies
 └── README.md                       # This file
 ```
@@ -130,11 +124,10 @@ ai_ddr_assistant/
 
 Edit `app/config.py` to customize:
 
-- **LLM Provider**: Choose between Gemini API or Ollama (local)
-- **Model Selection**: Choose specific model variant for your provider
+- **Model Selection**: Choose Gemini model variant
 - **Temperature**: Control randomness (extraction vs generation)
 - **Max Tokens**: Set output length limits
-- **Caching**: Enable/disable response caching for development
+- **Mock Mode**: Toggle between mock and real API calls
 
 ## Key Design Principles
 

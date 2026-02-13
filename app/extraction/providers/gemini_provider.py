@@ -5,7 +5,7 @@ from app.utils.retry_handler import retry_with_exponential_backoff
 
 
 class GeminiProvider(BaseLLMProvider):
-    #Google Gemini API provider
+    """Google Gemini API provider."""
 
     def __init__(self, model_name: str):
         self.model_name = model_name
@@ -18,7 +18,7 @@ class GeminiProvider(BaseLLMProvider):
         max_delay=Config.MAX_RETRY_DELAY
     )
     def generate(self, prompt: str, temperature: float, max_tokens: int) -> str:
-        #generate content using Gemini API with retry logic
+        """Generate content using Gemini API with retry logic."""
         response = self.model.generate_content(
             prompt,
             generation_config={
