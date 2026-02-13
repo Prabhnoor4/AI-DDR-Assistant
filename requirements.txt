@@ -1,0 +1,36 @@
+# Core PDF Processing
+pymupdf==1.24.9
+
+# LLM Integration
+google-generativeai==0.7.2
+
+# Data Validation & Schemas
+pydantic==2.8.2
+
+# Environment Variable Management
+python-dotenv==1.0.1
+
+# Text Similarity / Deduplication
+scikit-learn==1.5.1
+
+# Logging / Utilities
+rich==13.7.1
+
+# Optional: Faster JSON handling
+orjson==3.10.7
+
+# Optional: CLI Interface (if needed)
+typer==0.12.3
+
+# Optional: API (if later converted to backend service)
+fastapi==0.111.0
+uvicorn==0.30.6
+
+dotenv
+
+# Optional: Alternative LLM Providers
+openai>=1.0.0  # For OpenAI GPT models
+requests>=2.31.0  # For Ollama local models
+
+# Web Frontend
+streamlit>=1.30.0  # Web UI for DDR generation
